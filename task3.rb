@@ -1,5 +1,5 @@
-t1 = 100000
-t2 = 100000
+t1 = ARGV[0]
+t2 = ARGV[1]
 
 def choseEnd(a, n)
   a = a - ((a / 10).floor) * 10
