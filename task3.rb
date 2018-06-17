@@ -51,9 +51,13 @@ if allow == true
       daysStr = 'день'
     when 2
      daysStr = 'дня'
+  end 
+  if hours > 0
+    hoursStr = "час#{choseEnd(hours, 1)}"
   end
-  hoursStr = "час#{choseEnd(hours, 1)}"
+  if min > 0
   minStr = "минут#{choseEnd(min, 2)}"
+  end
   secStr = "секунд#{choseEnd(sec, 3)}"
 
   answer = "#{days} #{daysStr} #{hours} #{hoursStr} #{min} #{minStr} #{sec} #{secStr}"
