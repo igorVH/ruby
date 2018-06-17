@@ -6,21 +6,21 @@ def choseEnd(a, n)
   case a 
     when 0
       if n == 1
-        return "ов"
+        return "РѕРІ"
       end
     when 1
       if n != 1
-        return "а"
+        return "Р°"
       end
     when 2, 3, 4
       if n != 1 
-        return "ы"
+        return "С‹"
       else
-        return "а"
+        return "Р°"
       end 
     when 5, 6, 7, 8, 9
       if n == 1
-        return "ов"
+        return "РѕРІ"
       end    
   end
 end
@@ -28,7 +28,7 @@ end
 if (t1 >= 1 || t1 <= 100000) && (t2 >= 1 || t2 <= 100000)
   allow = true
 else
-  puts "Неверные данные"
+  puts "РќРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ"
 end
 
 if allow == true 
@@ -48,13 +48,13 @@ if allow == true
 
   case days
     when 1 
-      daysStr = 'день'
+      daysStr = 'РґРµРЅСЊ'
     when 2
-     daysStr = 'дня'
+     daysStr = 'РґРЅСЏ'
   end
-  hoursStr = "час#{choseEnd(hours, 1)}"
-  minStr = "минут#{choseEnd(min, 2)}"
-  secStr = "секунд#{choseEnd(sec, 3)}"
+  hoursStr = "С‡Р°СЃ#{choseEnd(hours, 1)}"
+  minStr = "РјРёРЅСѓС‚#{choseEnd(min, 2)}"
+  secStr = "СЃРµРєСѓРЅРґ#{choseEnd(sec, 3)}"
 
   answer = "#{days} #{daysStr} #{hours} #{hoursStr} #{min} #{minStr} #{sec} #{secStr}"
   puts answer
