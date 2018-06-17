@@ -9,7 +9,6 @@ end
 
 if a != 10 
   i = changer(i, a)
-  a = 10
 end
   
 res = i.to_s(b)
